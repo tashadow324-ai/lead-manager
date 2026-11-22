@@ -1,0 +1,13 @@
+{
+  "name": "lead-manager",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack lead management app for the Meru Technosoft screening assignment",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "test": "npm test --prefix server",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "devDependencies": {"concurrently": "^9.1.2"}
+}
